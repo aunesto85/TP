@@ -1,0 +1,40 @@
+body {
+    margin: 0em;
+    background-color: rgba(128, 128, 128, 0.432);
+}
+
+.cover {
+    background-image: url(img/img1.jpg);
+    background-size: cover;
+    background-color: red;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.493);
+    background-blend-mode: darken;
+    height: 400px;
+    color: white;
+}
+
+.card {
+    border: 0 !important;
+    background-size: cover;
+    box-shadow: 0 4px 6px -1px black;
+}
+
+.card-title {
+    min-height: 3rem;
+}
+
+.card-text {
+    min-height: 10rem;
+}
+
+.nav-link {
+    color: white;
+    font-size: 12px;
+
+}
+
+.carousel {
+    max-height: 350px;
+    max-width: 600px;
+}
