@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Reserva</title>
+</head>
+
+<body>
+    <header>
+        <nav class=" nav justify-content-end navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Ubicacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reserva.html">Reservar</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+        <section>
+            <div class="container " style="padding-top: 3rem;">
+                <div class="row justify-content-md-center">
+                    <div class="card mb-3" style="width: 13rem; height: 350px;">
+                        <img src="img/bart.jpg" height="180px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Combo BART</h5>
+                            <p class="card-text">Lunes y Miercoles 60% de descuento.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="width: 13rem; height: 350px;">
+                        <img src="img/homero.jpg" height=180px class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Combo Homero</h5>
+                            <p class="card-text">Martes y Jueves 40% de descuento.</p>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="width: 13rem; height: 350px;">
+                        <img src="img/lisa.jpg" height="180px" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Combo Lisa</h5>
+                            <p class="card-text">Viernes y Sabados 10% de descuento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Form -->
+            <div class="container w-50 pt-2" style="margin-top: 50px;">
+                <div class="text-center">
+                    <h3>VALOR DE RESERVA $2000</h3>
+                    </p>
+                </div>
+
+                <!-- Formulario -->
+                <form class="row g-1 gx-2 formulario" id="formulario">
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <input type="text" class="form-control" placeholder="Apellido">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Correo">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="cantidad" class="form-label">Cantidad</label>
+                        <input type="text" class="form-control" id="cantidad" placeholder="Cantidad">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="cantidad" class="form-label">Categoría</label>
+                        <select id="categoria" class="form-select">
+                            <option value="">Sin categoria</option>
+                            <option value="bart">Bart</option>
+                            <option value="homero">Homero</option>
+                            <option value="lisa">Lisa</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <p class="alert alert-primary" id="totalAPagar">Total a Pagar: $</p>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn text-white fs-6 btnBorrar" style="background-color: #2b328f;" type=" button"
+                            id="borrar">Borrar</button>
+                    </div>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button class="btn text-white fs-6 btnResumen" style="background-color: #2b328f;" type=" button"
+                            id="resumen">Resumen</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer class="p-2 mb-2 mt-5 bg-dark text-white .bg-dark">
+            <div class="container">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Preguntas Frecuentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactenos</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    
+<script src="js.js"></script>
+</body>
+</html>
