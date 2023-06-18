@@ -47,13 +47,23 @@ h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius: 8px;
     background-color: rgb(112, 106, 106);
-    border: solid;}
+    border: solid;
+}
 
-    h4 {
-        border: solid; 
-        border-radius: 15px;
-        padding: 15px;
-        color: white;
-        background-color: rgb(112, 106, 106);
+h4 {
+    border: solid;
+    border-radius: 15px;
+    padding: 15px;
+    color: white;
+    background-color: rgb(112, 106, 106);
+}
+.header {
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
 
-    }
+.bigicon {
+    font-size: 35px;
+    color: #36A0FF;
+}
